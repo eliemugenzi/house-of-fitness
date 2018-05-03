@@ -275,10 +275,9 @@ nav ul li:hover a{
 
 #for-men .desc{
   padding:20px;
+  margin-bottom:50px;
 }
-#for-men p{
-  line-height: 40px;
-}
+
 
 
 #posts .posts-grid{
@@ -477,7 +476,7 @@ footer > div.address{
   }
   footer > div.address{
     position: relative;
-    left:20%;
+    left:10%;
   }
   .icons{
     margin:auto 10%;
@@ -485,9 +484,16 @@ footer > div.address{
     justify-content: space-around;
   }
   #for-men p,#section-1 p{
-    line-height: 30px;
-    margin:40px;
-    font-size: 15px;
+
+      position: relative;
+     display: inline-block;
+     word-wrap: break-word;
+     overflow: hidden;
+     max-height: 17.6em; /* (Number of lines you want visible) * (line-height) */
+     line-height: 1.6em;
+     text-align:justify;
+
+
   }
   .line-small{
     position: relative;
