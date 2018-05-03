@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root{
+  --font-family: 'Montserrat',sans-serif;
+  --color-primary:#ef4d17;
+  --color-primary-dark:#000;
+  --color-light:#fff;
+}
+
+body{
+  font-family:var(--font-family);
+  background: var(--color-light);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav{
+  background: var(--color-primary-dark);
+  position: fixed;
+  top:0;
+  z-index: 999;
+  width: 100%;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
+
+.mobile-menu{
+  position: fixed;
+  top:70px;
+  left:30px;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  transform: translateY(-40px);
+  width: 80%;
+  padding: 10px;
+}
+.mobile-menu h3{
+  color:var(--color-light);
+  font-family: segoe script;
+}
+@media (min-width:750px){
+  .mobile-menu{
+    display: none;
+  }
+}
+#toggle{
+
+  color:var(--color-light);
+
+  margin-right: 10px;
+  display: block;
+  background: var(--color-primary-dark);
+  padding:10px 20px;
+  z-index:2;
+}
+
+nav ul li{
+  padding:10px;
+  transition: .5s;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--color-light);
+  text-transform: uppercase;
+}
+nav ul li:hover{
+  background: var(--color-light);
+}
+nav ul li:hover a{
+  color: var(--color-primary);
+}
+
+#showcase{
+  background: url('../img/fitness-for-men.jpg');
+  background-size:cover;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+
+
+}
+
+.intro{
+  background: rgba(0,0,0,.5);
+  width: 40%;
+  height:45%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  padding: 30px;
+  transform: translate(-50%,-50%);
+}
+.intro h1{
+  text-transform: uppercase;
+  color:var(--color-primary);
+  text-align: center;
+}
+.intro h3{
+  text-align: center;
+  color:var(--color-light);
+}
+.center{
+  text-align: center;
+  align-self: center;
+}
+.line{
+  position: relative;
+  width: 50%;
+  align-self: center;
+  height: 2px;
+  background: var(--color-primary);
+  margin:auto 10%;
+  transform: translateX(40%);
+}
+.line-small{
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background: var(--color-primary);
+  margin:auto 10%;
+  transform: translateX(190%);
+  text-align: center;
+}
+.line-alt{
+  position: relative;
+  width: 150px;
+  height: 2px;
+  background: var(--color-primary);
+  margin:auto 10%;
+
+}
+.btn{
+  padding: 15px 30px;
+  border:none;
+  background: var(--color-primary);
+  color:var(--color-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+.btn:hover{
+  background: var(--color-light);
+  color:var(--color-primary);
+  border: 3px solid var(--color-primary);
+}
+#section-1{
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+}
+#section-1 .desc-img{
+  background: url('../img/fitness-1.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#section-1 h2{
+  margin:auto 10%;
+}
+#section-1 .desc, #section-1 .desc-img{
+  width: 50%;
+}
+
+#section-1 .desc{
+  padding:20px;
+}
+
+#section-1 p{
+  line-height: 40px;
+}
+#classes{
+  padding: 20px;
+}
+#classes .class-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:10px;
+}
+.class-grid .grid-item{
+  transition: .5s;
+  background: var(--color-light);
+}
+.class-grid .grid-item:hover{
+
+  z-index: 2;
+}
+.class-grid .grid-img{
+  width: 100%;
+  position: relative;
+  height: 200px;
+}
+.grid-link{
+  width: 100%;
+  position: relative;
+  background: var(--color-primary);
+  color:var(--color-light);
+  text-align: center;
+  padding:10px 30px;
+  text-decoration: none;
+  margin-top:40px;
+  transition: .5s;
+}
+.grid-link:hover{
+  background: var(--color-light);
+  color:var(--color-primary);
+  border:3px solid var(--color-primary);
+}
+#coaches{
+  padding: 20px;
+  background: #eee;
+}
+#coaches .coach-grid > div{
+  background: var(--color-light);
+  padding: 10px;
+}
+#coaches .coach-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+.coach-grid-item{
+  transition: .5s;
+}
+.coach-grid-item:hover{
+  transform: scale(1.2);
+  z-index: 2;
+}
+.coach-profile{
+  display: flex;
+  justify-content: space-around;
+  margin:auto 20%;
+  transform: translateY(20px);
+}
+.coach-profile img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.coach-desc{
+  transform:translateY(-15px);
+}
+.coach-desc h3{
+  color: var(--color-primary);
+}
+.coach-desc p{
+  font-weight: bold;
+  transform: translateY(-20px);
+}
+
+#for-men{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  height: 70vh;
+}
+
+#for-men .desc-img{
+  background: url('../img/fitness-for-men.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#for-men h2{
+  margin:auto 10%;
+}
+#for-men .desc, #for-men .desc-img{
+  width: 50%;
+}
+
+#for-men .desc{
+  padding:20px;
+}
+#for-men p{
+  line-height: 40px;
+}
+
+#posts .posts-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+}
+.post-img{
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+.post-author{
+  margin:auto 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.post-author img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.link{
+  text-decoration: none;
+  color:var(--color-primary-dark);
+  margin:auto 10%;
+  position: relative;
+}
+.link:hover{
+  color:var(--color-primary);
+}
+
+#newsletter{
+  padding: 20px;
+  background: var(--color-primary);
+  margin-top: 30px;
+}
+#newsletter form{
+  margin-top:30px;
+  position: relative;
+  left:50%;
+}
+#newsletter h2{
+  color:var(--color-light);
+}
+#newsletter input[type=email]{
+  height: 40px;
+  border: none;
+  outline: none;
+  width: 270px;
+  font-family: var(--font-family);
+}
+#newsletter input[type=submit]{
+  padding:13px 30px;
+  font-family: var(--font-family);
+  color:var(--color-light);
+  border:2px solid var(--color-light);
+  background: var(--color-primary);
+  transition: .5s;
+}
+#newsletter input[type=submit]:hover{
+  color:var(--color-primary);
+  background: var(--color-light);
+  border: 2px solid var(--color-primary);
+}
+footer{
+   background: var(--color-primary-dark);
+   color:var(--color-light);
+   padding: 20px;
+}
+footer > div.address{
+  position: relative;
+  left:50%;
+}
+.icons{
+  margin:auto 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.icon{
+  border:2px solid var(--color-light);
+  border-radius: 50%;
+  padding:10px;
+  color:var(--color-light);
+  text-decoration: none;
+}
+
+.shrink{
+  background: var(--color-light);
+  color:var(--color-primary);
+}
+
+@media(max-width:750px){
+  h1{
+    font-size:20px;
+  }
+  h2{
+    font-size:17px;
+  }
+  nav ul{
+    display: none;
+  }
+  nav{
+    margin:0;
+  }
+  nav #toggle{
+    display: block;
+    position: relative;
+
+  }
+  #posts .posts-grid{
+      display: block;
+      margin-bottom:30px;
+  }
+  #post .post-grid .post{
+    padding: 20px;
+  }
+  #posts{
+    margin-top:30px;
+  }
+  #for-men{
+    display: block;
+    margin-bottom: 30px;
+  }
+  #for-men .desc, #for-men .desc-img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #coaches .coach-grid{
+    display: block;
+  }
+  .coach-grid-item{
+    transition: .5s;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  #classes .class-grid-item:hover{
+    z-index: 99;
+  }
+  #classes .class-grid{
+    display: block;
+    margin-bottom: 40px;
+  }
+  #section-1{
+    display: block;
+    height: 70vh;
+  }
+  #section-1 .desc-img{
+    background: url('../img/fitness-1.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  #section-1 .desc, #section-1 .desc-img{
+    width: 100%;
+  }
+  footer > div.address{
+    position: relative;
+    left:20%;
+  }
+  .icons{
+    margin:auto 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #for-men p,#section-1 p{
+    line-height: 30px;
+    margin:40px;
+    font-size: 15px;
+  }
+  .line-small{
+    position: relative;
+    width: 150px;
+    height: 2px;
+    background: var(--color-primary);
+    margin:auto 35%;
+    transform: translateX(-15px);
+  }
+  .intro{
+    position: relative;
+    top:50%;
+    width:80%;
+    left:50%;
+  }
+
+  #newsletter form{
+    display: block;
+    position: relative;
+    left:0;
+  }
+  #newsletter input[type=submit]{
+    margin-top:20px;
+  }
+}
