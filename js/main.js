@@ -1,2 +1,12 @@
 $(document).ready(()=>{
+  $("#toggle").click(()=>{
+    $("#nav-mobile").css({
+      visibility:'visible',
+    }).addClass("slide")
+  })
+  $("#close").click(()=>{
+    $("#nav-mobile").css({
+      visibility:'hidden'
+    }).removeClass("slide")
+  })
 })

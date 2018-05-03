@@ -280,6 +280,7 @@ nav ul li:hover a{
   line-height: 40px;
 }
 
+
 #posts .posts-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -370,6 +371,44 @@ footer > div.address{
   color:var(--color-primary);
 }
 
+#nav-mobile{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background: rgba(0,0,0,.9);
+  list-style: none;
+  transition: width .5s;
+  z-index:79;
+  visibility: hidden;
+}
+#nav-mobile li{
+
+  padding: 20px;
+}
+#nav-mobile li:hover{
+  background: var(--color-light);
+}
+#nav-mobile li:hover a{
+  color:var(--color-primary);
+}
+#nav-mobile a{
+  text-decoration: none;
+  color: var(--color-light);
+
+}
+.slide{
+  width: 50%;
+}
+#close{
+  position: relative;
+  top:5px;
+  right:3px;
+  float: right;
+  margin-right: 10%;
+}
+
 @media(max-width:750px){
   h1{
     font-size:20px;
@@ -387,6 +426,9 @@ footer > div.address{
     display: block;
     position: relative;
 
+  }
+  #posts{
+    margin-top:90px;
   }
   #posts .posts-grid{
       display: block;
@@ -469,5 +511,12 @@ footer > div.address{
   }
   #newsletter input[type=submit]{
     margin-top:20px;
+  }
+}
+
+@media (max-width:500px) {
+  #for-men p{
+    margin-bottom: 30px;
+
   }
 }
