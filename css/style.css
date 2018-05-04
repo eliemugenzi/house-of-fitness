@@ -41,10 +41,12 @@ nav ul{
   transform: translateY(-40px);
   width: 80%;
   padding: 10px;
+  margin:auto 10%;
 }
 .mobile-menu h3{
   color:var(--color-light);
   font-family: segoe script;
+  margin-right:20px;
 }
 @media (min-width:750px){
   .mobile-menu{
@@ -278,7 +280,9 @@ nav ul li:hover a{
   margin-bottom:50px;
 }
 
-
+section#section-1,section#coaches,section#classes,section#for-men,section#posts{
+  margin:auto 10%;
+}
 
 #posts .posts-grid{
     display: grid;
