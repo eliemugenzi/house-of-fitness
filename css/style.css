@@ -525,10 +525,3 @@ footer > div.address{
     margin-top:20px;
   }
 }
-
-@media (max-width:500px) {
-  #for-men p{
-    margin-bottom: 30px;
-
-  }
-}
