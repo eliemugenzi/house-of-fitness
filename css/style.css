@@ -128,7 +128,7 @@ nav ul li:hover a{
   height: 2px;
   background: var(--color-primary);
   margin:auto 10%;
-  transform: translateX(190%);
+  transform: translateX(150%);
   text-align: center;
 }
 .line-alt{
