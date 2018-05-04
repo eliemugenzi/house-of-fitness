@@ -41,7 +41,8 @@ nav ul{
   transform: translateY(-40px);
   width: 80%;
   padding: 10px;
-  margin:auto 10%;
+  margin-left:auto;
+  margin-right: 10%;
 }
 .mobile-menu h3{
   color:var(--color-light);
